@@ -1,12 +1,9 @@
 import express from 'express'
 import path from 'path'
 import favicon from 'serve-favicon'
-import dotenv from 'dotenv'
+import './config/dotenv.js';
+import Router from './routes/router.js';
 
-// import the router from your routes file
-
-
-dotenv.config()
 
 const PORT = process.env.PORT || 3000
 
