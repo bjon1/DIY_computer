@@ -7,9 +7,5 @@ const findAll = (type) => {
 
 export default {
     findAll,
-    findById,
-    create,
-    update,
-    delete: remove
 }
 
