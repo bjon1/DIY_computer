@@ -2,28 +2,26 @@ import express from 'express'
 import path from 'path'
 import favicon from 'serve-favicon'
 import './config/dotenv.js';
-import Router from './routes/router.js';
+import router from './routes/router.js';
 
 import setup from './db/setup.js'
 setup()
 
-
-const PORT = process.env.PORT || 3000
-
 const app = express()
-
 app.use(express.json())
+app.use('/api', router)
+
+app.get('/', (req, res) => {
+    res.send('<h1>DIY Computer API</h1>')
+})
 
 if (process.env.NODE_ENV === 'development') {
-    app.use(favicon(path.resolve('../', 'client', 'public', 'lightning.png')))
+    app.use(favicon(path.resolve('../', 'client', 'public', 'computer.png')))
 }
 else if (process.env.NODE_ENV === 'production') {
-    app.use(favicon(path.resolve('public', 'lightning.png')))
+    app.use(favicon(path.resolve('public', 'computer.png')))
     app.use(express.static('public'))
 }
-
-// specify the api path for the server to use
-
 
 if (process.env.NODE_ENV === 'production') {
     app.get('/*', (_, res) =>
@@ -31,6 +29,7 @@ if (process.env.NODE_ENV === 'production') {
     )
 }
 
+const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
     console.log(`server listening on http://localhost:${PORT}`)
 })

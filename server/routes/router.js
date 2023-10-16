@@ -1,12 +1,14 @@
 import express from 'express';
-import ItemsController from '../controllers/items.js';
-
+import PartsController from '../controllers/parts.js';
+import ComputersController from '../controllers/computers.js';
 const router = express.Router();
 
-router.get('/items', ItemsController.get);
-router.get('/items/:id', ItemsController.getById);
-router.post('/items', ItemsController.create);
-router.post('items/:id', ItemsController.update);
-router.delete('/items/:id', ItemsController.delete);
+router.get('/parts/:type', PartsController.get);
+
+router.get('/computers', ComputersController.get);
+router.get('/computers/:id', ComputersController.getById);
+router.post('/computers', ComputersController.create);
+router.patch('/computers/:id', ComputersController.update);
+router.delete('/computers/:id', ComputersController.delete);
 
 export default router;
