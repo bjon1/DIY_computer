@@ -11,7 +11,7 @@ const App = () => {
   let element = useRoutes([
     {
       path: '/',
-      element: <CreateComputer title='DIY COMPUTER | Customize' />
+      element: <CreateComputer title='DIY COMPUTER | Build Your Computer' />
     },
     {
       path:'/custombuilds',

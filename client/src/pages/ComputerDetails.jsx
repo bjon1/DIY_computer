@@ -1,11 +1,16 @@
 import React from 'react'
 import '../App.css'
+import { useEffect } from 'react'
 
 const ComputerDetails = () => {
 
-    return (
-        <div>
+    useEffect(() => {
+        
+    }, [])
 
+    return (    
+        <div>   
+            
         </div>
     )
 }

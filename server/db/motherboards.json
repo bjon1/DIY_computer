@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "ASUS ROG Maximus XIII Hero",
+    "chipset": "Z590",
+    "ram_type": "DDR4",
+    "price": 499.99
+  },
+  {
+    "id": 2,
+    "name": "GIGABYTE AORUS X570 Master",
+    "chipset": "X570",
+    "ram_type": "DDR4",
+    "price": 379.99
+  },
+  {
+    "id": 3,
+    "name": "MSI MPG B550 Gaming Edge WiFi",
+    "chipset": "B550",
+    "ram_type": "DDR4",
+    "price": 189.99
+  },
+  {
+    "id": 4,
+    "name": "ASRock B550 Steel Legend",
+    "chipset": "B550",
+    "ram_type": "DDR4",
+    "price": 159.99
+  },
+  {
+    "id": 5,
+    "name": "ASUS Prime Z590-A",
+    "chipset": "Z590",
+    "ram_type": "DDR4",
+    "price": 259.99
+  }
+]

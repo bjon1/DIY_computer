@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "NVIDIA GeForce RTX 3080",
+    "power": "320W",
+    "price": 699.99
+  },
+  {
+    "id": 2,
+    "name": "AMD Radeon RX 6800 XT",
+    "power": "300W",
+    "price": 649.99
+  },
+  {
+    "id": 3,
+    "name": "NVIDIA GeForce RTX 3070",
+    "power": "220W",
+    "price": 499.99
+  },
+  {
+    "id": 4,
+    "name": "AMD Radeon RX 6700 XT",
+    "power": "230W",
+    "price": 479.99
+  },
+  {
+    "id": 5,
+    "name": "NVIDIA GeForce GTX 1660 Super",
+    "power": "125W",
+    "price": 229.99
+  }
+]

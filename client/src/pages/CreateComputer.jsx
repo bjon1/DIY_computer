@@ -5,7 +5,7 @@ const CreateComputer = () => {
 
     return (
         <div>
-
+            
         </div>
     )
 }

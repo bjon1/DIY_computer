@@ -4,6 +4,9 @@ import favicon from 'serve-favicon'
 import './config/dotenv.js';
 import Router from './routes/router.js';
 
+import setup from './db/setup.js'
+setup()
+
 
 const PORT = process.env.PORT || 3000
 

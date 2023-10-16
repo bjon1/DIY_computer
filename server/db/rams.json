@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "capacity": "16GB",
+    "type": "DDR4",
+    "name": "Corsair Vengeance LPX",
+    "price": 89.99
+  },
+  {
+    "id": 2,
+    "capacity": "32GB",
+    "type": "DDR4",
+    "name": "G.Skill Ripjaws V",
+    "price": 179.99
+  },
+  {
+    "id": 3,
+    "capacity": "16GB",
+    "type": "DDR4",
+    "name": "Crucial Ballistix",
+    "price": 94.99
+  },
+  {
+    "id": 4,
+    "capacity": "32GB",
+    "type": "DDR4",
+    "name": "Kingston HyperX Fury",
+    "price": 189.99
+  },
+  {
+    "id": 5,
+    "capacity": "8GB",
+    "type": "DDR4",
+    "name": "Team T-Force Vulcan",
+    "price": 49.99
+  }
+]
