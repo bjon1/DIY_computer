@@ -1,7 +1,7 @@
 import React from 'react'
 import '../App.css'
 
-const ViewCars = () => {
+const ViewComputers = () => {
     
     return (
         <div>
@@ -10,4 +10,4 @@ const ViewCars = () => {
     )
 }
 
-export default ViewCars
+export default ViewComputers
