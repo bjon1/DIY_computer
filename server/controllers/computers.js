@@ -20,8 +20,7 @@ const getById = async (req, res) => {
 
 const create = async (req, res) => {
     try {
-        const { details } = req.body;
-        const results = await ComputersModel.create(details)
+        const results = await ComputersModel.create(req.body)
         res.status(201).json(results.rows);
     } catch(e) {
         res.status(400).json({error: e.message})
@@ -30,8 +29,7 @@ const create = async (req, res) => {
 
 const update = async (req, res) => {
     try {
-        const { details } = req.body
-        const results = await ComputersModel.update(req.params.id, details)
+        const results = await ComputersModel.update(req.params.id, req.body)
         res.status(201).json(results.rows)
     } catch (error) {
         res.status(400).json( { error: error.message } )

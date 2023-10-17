@@ -7,7 +7,7 @@ const get = async (req, res) => {
             const results = await PartsModel.findAll(req.params.type);
             res.status(200).json(results.rows);
         } else {
-            res.status(400).json({error: "Invalid type"})
+            throw new Error("Invalid type");
         }
     } catch(e) {
         res.status(400).json({error: e.message})
