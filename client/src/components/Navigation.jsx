@@ -10,8 +10,8 @@ const Navigation = () => {
             </ul>
 
             <ul>
-                <li><a href='/' role='button'>Customize</a></li>
-                <li><a href='/custombuilds' role='button'>View Builds</a></li>
+                <li><a href='/' role='button'>Create  <i className="fa-solid fa-plus"></i></a></li>
+                <li><a href='/custombuilds' role='button'>View Builds <i className="fa-solid fa-computer"></i></a></li>
             </ul>
             
         </nav>
